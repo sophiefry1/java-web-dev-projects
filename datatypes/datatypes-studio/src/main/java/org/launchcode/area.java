@@ -13,6 +13,8 @@ public class area {
         double pi = 3.14;
         return pi * radius * radius;
 
+        System.out.println("The area of a circle of radius " + radius + " is: " + area);
+
 
 
 
