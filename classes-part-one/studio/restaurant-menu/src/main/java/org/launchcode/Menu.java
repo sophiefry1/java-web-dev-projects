@@ -1,37 +1,17 @@
 package org.launchcode;
 
-import static java.awt.SystemColor.menu;
-
+import java.util.ArrayList;
 public class Menu {
-    public void setMenu(String name) {
-        this.menu = menu;
+
+    private ArrayList<MenuItem> menuItems = new ArrayList<>();
+    private LocalDate lastUpdated;
+
+    public ArrayList<MenuItem> getMenuItems() {
+        return menuItems;
     }
-
-    public void setprice(int price) {
-        int price1 = price;
-
-    }
-
-    public void setMenuItem(double price) {
-        this.getPrice() = (int) price;
-    }
-
-    private void setNumberOfCredits(int numberOfCredits) {
-        this.numberOfCredits = numberOfCredits;
-    }
-
-    public String getMenu() {
-        return name;
-    }
-
-    public int getPrice() {
-        return price;
-    }
-
-    public int getMenuItem() {
-        int MenuItem;
-        return MenuItem;
-    }
-
-
 }
+
+
+
+
+
