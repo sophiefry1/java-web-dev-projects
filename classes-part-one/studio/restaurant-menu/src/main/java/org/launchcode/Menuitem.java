@@ -6,7 +6,6 @@ public class MenuItem {
     private double price;
 
 
-
     public MenuItem(String name, String description, double price, String category) {
         this.name = name;
         this.description = description;
@@ -14,9 +13,11 @@ public class MenuItem {
         this.category = category;
         this.dateAdded = LocalDate.now();
     }
+
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -45,9 +46,38 @@ public class MenuItem {
         this.category = category;
     }
 
-    private String category;
+    public LocalDate getDateAdded() {
+        return dateAdded;
+
+    }
+      @Override
+      public String toString(){
+        String newText = isNew() ? " - NEW!" : "";
+        return name + newText + "\n" + description + " | $ + price";
+      }
+
+      @Override
+      public boolean equals(Object toBeCompared) {
+        if(this == toBeCompared) {
+            return true;
+        }
+        if(toBeCompared) == null) {
+            return false;
+          }
+      }
+
+    void getClass() == toBeCompared.getClass()) {
+             return false;
+
+    }
+    MenuItem otherItem = (MenuItem)  toBeCompared;
+return this.name.equals(otherItem.getName());
 
 
-    private final LocalDate dateAdded;
+    boolean isNew() {
+        LocalDate today = LocalDate.now();
+        double daysBetween = getDateAdded().until(today, ChronoUnit.DAYS);
+        return daysBetween < 90;
+    }
+
 }
-
