@@ -30,4 +30,9 @@ public class BalancedBrackets {
         }
         return brackets == 0;
     }
+
+    public static boolean hasBalancedBrackets(String s, String s1, String s2) {
+
+        return false;
+    }
 }
